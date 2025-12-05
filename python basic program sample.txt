@@ -1,0 +1,211 @@
+✅ 1. Hello World
+print("Hello, World!")
+✅ 2. Add Two Numbers
+a = 5
+b = 3
+print(a + b)
+✅ 3. Swap Two Numbers
+a, b = 10, 20
+a, b = b, a
+print(a, b)
+✅ 4. Check Even or Odd
+n = int(input())
+print("Even" if n % 2 == 0 else "Odd")
+✅ 5. Check Positive/Negative
+n = float(input())
+if n > 0: print("Positive")
+elif n < 0: print("Negative")
+else: print("Zero")
+✅ 6. Largest of Two Numbers
+a, b = 10, 20
+print(max(a, b))
+✅ 7. Largest of Three Numbers
+a, b, c = 1, 5, 3
+print(max(a, b, c))
+✅ 8. Simple Calculator
+a = int(input())
+b = int(input())
+print(a+b, a-b, a*b, a/b)
+✅ 9. Check Leap Year
+y = int(input())
+print("Leap year" if (y%4==0 and y%100!=0) or (y%400==0) else "Not leap")
+✅ 10. Print 1 to 10
+for i in range(1, 11):
+    print(i)
+________________________________________
+🎯 LOOPS & PATTERNS
+✅ 11. Sum of First N Numbers
+n = int(input())
+print(n*(n+1)//2)
+✅ 12. Factorial
+n = int(input())
+fact = 1
+for i in range(1, n+1):
+    fact *= i
+print(fact)
+✅ 13. Multiplication Table
+n = int(input())
+for i in range(1, 11):
+    print(n, "x", i, "=", n*i)
+✅ 14. Fibonacci Series
+n = int(input())
+a, b = 0, 1
+for _ in range(n):
+    print(a)
+    a, b = b, a + b
+✅ 15. Count Digits
+n = input()
+print(len(n))
+✅ 16. Reverse Number
+n = input()
+print(n[::-1])
+✅ 17. Sum of Digits
+n = input()
+print(sum(int(i) for i in n))
+✅ 18. Check Palindrome Number
+n = input()
+print("Palindrome" if n == n[::-1] else "Not palindrome")
+✅ 19. Print Stars Pattern
+for i in range(5):
+    print("*" * (i+1))
+✅ 20. Reverse Pattern
+for i in range(5, 0, -1):
+    print("*" * i)
+________________________________________
+🎯 STRING PROGRAMS
+✅ 21. Reverse a String
+s = "Python"
+print(s[::-1])
+✅ 22. Count Vowels
+s = input().lower()
+print(sum(s.count(v) for v in "aeiou"))
+✅ 23. Remove Spaces
+s = "Python is fun"
+print(s.replace(" ", ""))
+✅ 24. Check Palindrome String
+s = input()
+print("Palindrome" if s == s[::-1] else "Not palindrome")
+✅ 25. Count Words
+s = input()
+print(len(s.split()))
+✅ 26. Frequency of Character
+s = input()
+ch = input()
+print(s.count(ch))
+________________________________________
+🎯 LIST PROGRAMS
+✅ 27. Largest in List
+lst = [1, 5, 3, 9]
+print(max(lst))
+✅ 28. Smallest in List
+lst = [4, 2, 7]
+print(min(lst))
+✅ 29. Sum of List
+lst = [1, 2, 3]
+print(sum(lst))
+✅ 30. Remove Duplicates
+lst = [1, 2, 2, 3]
+print(list(set(lst)))
+✅ 31. Sort List
+lst = [4, 2, 1, 3]
+lst.sort()
+print(lst)
+________________________________________
+🎯 DICTIONARY PROGRAMS
+✅ 32. Create Dictionary
+d = {"name": "John", "age": 20}
+print(d)
+✅ 33. Add Key–Value
+d = {}
+d["name"] = "Kaushik"
+print(d)
+✅ 34. Iterate Dictionary
+d = {"a": 1, "b": 2}
+for k, v in d.items():
+    print(k, v)
+✅ 35. Check Key Exists
+d = {"name": "Tom"}
+print("name" in d)
+________________________________________
+🎯 FUNCTION PROGRAMS
+✅ 36. Simple Function
+def hello():
+    print("Hello")
+
+hello()
+✅ 37. Function with Arguments
+def add(a, b):
+    return a + b
+
+print(add(5, 3))
+✅ 38. Factorial Using Function
+def fact(n):
+    return 1 if n==0 else n*fact(n-1)
+
+print(fact(5))
+________________________________________
+🎯 FILE PROGRAMS
+✅ 39. Write to File
+f = open("test.txt", "w")
+f.write("Hello")
+f.close()
+✅ 40. Read File
+f = open("test.txt", "r")
+print(f.read())
+f.close()
+________________________________________
+🎯 MORE SIMPLE PROGRAMS
+✅ 41. Area of Circle
+r = float(input())
+print(3.14 * r * r)
+✅ 42. Simple Interest
+p, r, t = 1000, 5, 2
+print((p*r*t)/100)
+✅ 43. Armstrong Number
+n = input()
+print("Armstrong" if sum(int(d)**3 for d in n)==int(n) else "Not")
+✅ 44. Prime Number
+n = int(input())
+if n < 2:
+    print("Not prime")
+else:
+    for i in range(2, n):
+        if n % i == 0:
+            print("Not prime")
+            break
+    else:
+        print("Prime")
+✅ 45. Prime Numbers in Range
+for n in range(2, 51):
+    for i in range(2, n):
+        if n % i == 0:
+            break
+    else:
+        print(n)
+✅ 46. GCD of Two Numbers
+import math
+print(math.gcd(24, 36))
+✅ 47. LCM of Two Numbers
+import math
+a, b = 4, 6
+print(a * b // math.gcd(a, b))
+✅ 48. Average of Numbers
+lst = [10, 20, 30]
+print(sum(lst) / len(lst))
+✅ 49. Convert Celsius to Fahrenheit
+c = float(input())
+print((c * 9/5) + 32)
+✅ 50. Generate Random Number
+import random
+print(random.randint(1, 100))
+✅ 51. Guessing Game
+import random
+
+num = random.randint(1, 10)
+guess = int(input("Guess: "))
+
+if guess == num:
+    print("Correct!")
+else:
+    print("Wrong! Number was", num)
+
