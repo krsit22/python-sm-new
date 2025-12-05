@@ -1,0 +1,42 @@
+Here is a clear and simple difference between List and Tuple in Python:
+
+✅ Difference Between List and Tuple
+Feature	List	Tuple
+Mutability	Mutable (you can change values)	Immutable (values cannot be changed)
+Syntax	[] square brackets	() parentheses
+Performance	Slower	Faster than list
+Use Case	When you need to modify data	When data should not change
+Methods Available	Many (append, remove, sort, etc.)	Very few (count, index)
+Memory Usage	Uses more memory	Uses less memory
+📌 Example of List
+fruits = ["apple", "banana", "mango"]
+fruits[1] = "orange"   # Changing allowed
+print(fruits)
+
+
+Output:
+
+['apple', 'orange', 'mango']
+
+📌 Example of Tuple
+colors = ("red", "green", "blue")
+colors[1] = "yellow"   # NOT allowed → will give error
+
+
+Error:
+
+TypeError: 'tuple' object does not support item assignment
+
+⭐ Quick Summary
+
+List = Changeable
+
+Tuple = Unchangeable
+
+List = []
+
+Tuple = ()
+
+List = Slow
+
+Tuple = Fast & safe

@@ -1,0 +1,53 @@
+✅ 1. Print a Message
+print("Hello, Python!")
+
+✅ 2. Variables
+name = "Kaushik"
+age = 21
+print(name, age)
+
+✅ 3. Taking Input
+name = input("Enter your name: ")
+print("Welcome,", name)
+
+✅ 4. If–Else Condition
+num = 10
+
+if num > 0:
+    print("Positive number")
+else:
+    print("Negative number")
+
+✅ 5. For Loop
+for i in range(1, 6):
+    print(i)
+
+✅ 6. While Loop
+count = 1
+while count <= 5:
+    print(count)
+    count += 1
+
+✅ 7. Function in Python
+def greet():
+    print("Hello from function!")
+
+greet()
+
+✅ 8. List Example
+fruits = ["apple", "banana", "cherry"]
+for f in fruits:
+    print(f)
+
+✅ 9. Dictionary Example
+student = {"name": "John", "age": 20}
+print(student["name"])
+
+✅ 10. Simple Calculator
+a = int(input("Enter first number: "))
+b = int(input("Enter second number: "))
+
+print("Sum:", a + b)
+print("Difference:", a - b)
+print("Product:", a * b)
+print("Division:", a / b)
